@@ -1,8 +1,38 @@
 ﻿
-<li>@Html.ActionLink("Pagina Home", "PaginaHome", "Home", new { Area = "" }, new { })</li>
-<li>@Html.ActionLink("Contact", "Index", "Contact", new { Area = "" }, new { })</li>
-<li>@Html.ActionLink("Contact Master", "ContactMaster", "Contact", new { Area = "" }, new { })</li>
-<li>@Html.ActionLink("SubGroupOne", "Index", "Index", new { Area = "SubGroupOne" }, new { })</li>
-<li>@Html.ActionLink("SubGroupTwo", "Index", "Index", new { Area = "SubGroupTwo" }, new { })</li>
-<li>@Html.ActionLink("Test", "Index", "Index", new { Area = "Test" }, new { })</li>
-<li>@Html.ActionLink("SubTest", "Index", "Index", new { Area = "SubTest" }, new { })</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Index <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Index", "Index", "Home", new { Area = "" }, new { })</li>
+        <li>@Html.ActionLink("Pagina Home", "PageHome", "Home", new { Area = "" }, new { })</li>
+    </ul>
+</li>
+
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Contact", "Index", "Contact", new { Area = "" }, new { })</li>
+        <li>@Html.ActionLink("Contact Master", "ContactMaster", "Contact", new { Area = "" }, new { })</li>
+    </ul>
+</li>
+
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Test And Sub Test <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Test", "Index", "Index", new { Area = "Test" }, new { })</li>
+        <li>@Html.ActionLink("PageTest", "PageTest", "Index", new { Area = "Test" }, new { })</li>
+        <li role="separator" class="divider"></li>
+        <li>@Html.ActionLink("SubTest", "Index", "Index", new { Area = "SubTest" }, new { })</li>
+        <li>@Html.ActionLink("PageSubTest", "PageSubTest", "Index", new { Area = "SubTest" }, new { })</li>
+    </ul>
+</li>
+
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sub Group One And Sub Group Two <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("SubGroupOne", "Index", "Index", new { Area = "SubGroupOne" }, new { })</li>
+        <li>@Html.ActionLink("PageSubGroupOne", "PageSubGroupOne", "Index", new { Area = "SubGroupOne" }, new { })</li>
+        <li role="separator" class="divider"></li>
+        <li>@Html.ActionLink("SubGroupTwo", "Index", "Index", new { Area = "SubGroupTwo" }, new { })</li>
+        <li>@Html.ActionLink("PageSubGroupTwo", "PageSubGroupTwo", "Index", new { Area = "SubGroupTwo" }, new { })</li>
+    </ul>
+</li>

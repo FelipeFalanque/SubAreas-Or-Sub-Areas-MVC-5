@@ -126,7 +126,6 @@
     <Compile Include="Areas\GroupOne\SubGroupOne\Controllers\IndexController.cs" />
     <Compile Include="Areas\GroupOne\SubGroupOne\SubGroupOneAreaRegistration.cs" />
     <Compile Include="Areas\GroupOne\SubGroupOne\SubGroupOneRazorViewEngine.cs" />
-    <Compile Include="Areas\Test\TestRazorViewEngine.cs" />
     <Compile Include="Areas\Test\SubTest\Controllers\IndexController.cs" />
     <Compile Include="Areas\Test\SubTest\SubTestRazorViewEngine.cs" />
     <Compile Include="Areas\Test\SubTest\SubTestAreaRegistration.cs" />
@@ -137,7 +136,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\ViewHelper.cs" />
+    <Compile Include="Helpers\CustomRazorViewEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +166,10 @@
     <Content Include="Areas\GroupOne\SubGroupTwo\Views\Index\Index.cshtml" />
     <Content Include="Areas\GroupOne\SubGroupTwo\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\GroupOne\SubGroupTwo\Views\web.config" />
+    <Content Include="Areas\GroupOne\SubGroupOne\Views\Index\PageSubGroupOne.cshtml" />
+    <Content Include="Areas\GroupOne\SubGroupTwo\Views\Index\PageSubGroupTwo.cshtml" />
+    <Content Include="Areas\Test\SubTest\Views\Index\PageSubTest.cshtml" />
+    <Content Include="Areas\Test\Views\Index\PageTest.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -191,7 +194,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Partial\_Links.cshtml" />
-    <Content Include="Views\Home\PaginaHome.cshtml" />
+    <Content Include="Views\Home\PageHome.cshtml" />
     <Content Include="Views\Contact\ContactMaster.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>

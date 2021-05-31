@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using WebAppMVC5.Helpers;
 
 namespace WebAppMVC5.Areas.Test.SubTest
 {
@@ -8,8 +9,9 @@ namespace WebAppMVC5.Areas.Test.SubTest
         {
             get
             {
-                return new RazorViewEngine
+                return new CustomRazorViewEngine
                 {
+                    IsSubArea = true,
                     AreaPartialViewLocationFormats = new[] { "~/Areas/Test/SubTest/Views/{1}/{0}.cshtml", "~/Areas/Test/SubTest/Views/Shared/{0}.cshtml" },
                     AreaMasterLocationFormats = new[] { "~/Areas/Test/SubTest/Views/{1}/{0}.cshtml" },
                     AreaViewLocationFormats = new[] { "~/Areas/Test/SubTest/Views/{1}/{0}.cshtml" }

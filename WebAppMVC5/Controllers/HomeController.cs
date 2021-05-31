@@ -13,7 +13,7 @@ namespace WebAppMVC5.Controllers
             return View();
         }
 
-        public ActionResult PaginaHome()
+        public ActionResult PageHome()
         {
             return View();
         }
